@@ -82,6 +82,7 @@ Note: after `connectedDebugAndroidTest` the main APK can be removed from the dev
 
 ## Conventions
 - Offline-first; no network dependency at runtime.
+- Deferred feature ideas and their analysis live in `docs/ideas.md` (OCR price-tag scan, online barcode lookup).
 - Room DB version bumped on schema change; provide migration.
 - Prices stored as strings (BigDecimal) to avoid float errors.
 - Unit tests for calculators must stay ≥90% coverage.
