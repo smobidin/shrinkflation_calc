@@ -1,36 +1,37 @@
 # AGENTS.md — Shrinkflation Calculator (Android)
 
 ## Project
-- Path: `/home/stas/dev/android/shr_calc/`
+- Path: repository root (`.`) — all commands below assume this directory
 - Package: `com.team.itexperts.shrinkflation.calc`
 - Language: Kotlin + Jetpack Compose (Material3)
 - Build: Gradle 8.2, AGP 8.2.0, Kotlin 1.9.0
 
 ## Environment (Linux only, NO Win_Home)
-- JDK: `/home/stas/dev_tools/jdk-17.0.13+11`
-- Gradle: `/home/stas/dev_tools/gradle` (GRADLE_USER_HOME)
-- Android SDK: `/home/stas/dev_tools/AndroidSDK` (ANDROID_HOME)
-- Emulator: `/home/stas/dev_tools/AndroidSDK/emulator/emulator` (AVD `shr_calc`, Android 34 x86_64)
-- adb: `/home/stas/dev_tools/AndroidSDK/platform-tools/adb`
+Tool locations are machine-specific and must come from environment variables — never hardcode absolute paths in this file.
+- JDK 17: `$JAVA_HOME`
+- Gradle cache: `$GRADLE_USER_HOME` (GRADLE_USER_HOME)
+- Android SDK: `$ANDROID_HOME` / `$ANDROID_SDK_ROOT`
+- Emulator binary: `$ANDROID_HOME/emulator/emulator` (AVD `shr_calc`, Android 34 x86_64)
+- adb: `$ANDROID_HOME/platform-tools/adb`
 
-Required env vars before any build:
+Required env vars before any build (fill in the real paths locally):
 ```bash
-export JAVA_HOME=/home/stas/dev_tools/jdk-17.0.13+11
-export GRADLE_USER_HOME=/home/stas/dev_tools/gradle
-export ANDROID_HOME=/home/stas/dev_tools/AndroidSDK
+export JAVA_HOME=<path to JDK 17>
+export GRADLE_USER_HOME=<path to Gradle cache>
+export ANDROID_HOME=<path to Android SDK>
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$JAVA_HOME/bin:$ANDROID_HOME/platform-tools:$PATH
 ```
 
 ## Hard rules
-- NEVER use `/home/stas/Win_Home` — Windows mount, noexec, unstable. All tooling must live under `/home/stas/dev_tools/`.
+- NEVER use Windows mount directories (`Win_Home`) — noexec, unstable. Keep all tooling in a local dev-tools directory outside the repository.
 - NEVER modify `happ` or `tinyproxy`.
 - If a resource cannot be reached, provide the link to the user instead of guessing.
-- Android Studio install path (if needed): `/home/stas/dev_tools/android-studio`.
+- Android Studio (if needed): set `ANDROID_STUDIO_HOME` locally; do not record its absolute path here.
 
 ## Build / test
+Run from the repository root:
 ```bash
-cd /home/stas/dev/android/shr_calc
 sh ./gradlew :app:assembleDebug
 sh ./gradlew :app:testDebugUnitTest
 sh ./gradlew :app:connectedDebugAndroidTest
