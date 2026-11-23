@@ -27,7 +27,7 @@ export PATH=$JAVA_HOME/bin:$ANDROID_HOME/platform-tools:$PATH
 - NEVER use Windows mount directories (`Win_Home`) — noexec, unstable. Keep all tooling in a local dev-tools directory outside the repository.
 - NEVER modify `happ` or `tinyproxy`.
 - If a resource cannot be reached, provide the link to the user instead of guessing.
-- Android Studio (if needed): set `ANDROID_STUDIO_HOME` locally; do not record its absolute path here.
+- Android Studio (if needed): typical local location `$HOME/dev_tools/android-studio`; set `ANDROID_STUDIO_HOME` accordingly. Do not hardcode an absolute path here.
 
 ## Build / test
 Run from the repository root:
