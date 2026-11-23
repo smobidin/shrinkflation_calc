@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Shrinkflation Calc</string>
+
+    <string name="nav_unitprice">Unit price</string>
+    <string name="nav_shrinkflation">Shrinkflation</string>
+    <string name="nav_comparison">Compare</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="title_unitprice">Price per unit</string>
+    <string name="title_shrinkflation">Shrinkflation</string>
+    <string name="title_comparison">Unit price comparison</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="field_product">Product</string>
+    <string name="field_brand">Brand</string>
+    <string name="field_spec">Specification</string>
+    <string name="field_price">Price</string>
+    <string name="field_qty">Quantity</string>
+
+    <string name="action_save_to_db">Save to database</string>
+    <string name="label_type">Type: %1$s</string>
+    <string name="label_old_package">Old package</string>
+    <string name="label_new_package">New package</string>
+    <string name="action_calculate">Calculate</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_swap">Swap</string>
+    <string name="action_add">Add</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_compare">Compare</string>
+
+    <string name="result_unit_price">Price per 1 %1$s: %2$s</string>
+    <string name="result_unit_old">Old unit price: %1$s</string>
+    <string name="result_unit_new">New unit price: %1$s</string>
+    <string name="result_change">Change: %1$s%%</string>
+    <string name="result_equiv">Equivalent price: %1$s</string>
+    <string name="result_overpay">Overpay: %1$s</string>
+    <string name="result_target">Target price: %1$s</string>
+    <string name="result_discount">Discount needed: %1$s%%</string>
+    <string name="comparison_result_header">Comparison result</string>
+    <string name="comparison_result_hint">Price per 1 %1$s — from best value to most expensive</string>
+    <string name="comparison_label_full">%1$s &quot;%2$s&quot;, %3$s</string>
+    <string name="comparison_label_brand">%1$s &quot;%2$s&quot;</string>
+    <string name="comparison_label_spec">%1$s, %3$s</string>
+    <string name="comparison_price">%2$s%1$s/%3$s</string>
+    <string name="comparison_cheapest_line">★ %1$s — %2$s — best value</string>
+    <string name="comparison_more_line">%1$s — %2$s — %3$s%% more expensive (%4$s)</string>
+
+    <string name="unit_mass">Mass</string>
+    <string name="unit_volume">Volume</string>
+    <string name="unit_count">Count</string>
+    <string name="unit_g">g</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_ml">ml</string>
+    <string name="unit_l">l</string>
+    <string name="unit_pcs">pcs</string>
+
+    <string name="error_need_price_qty">Enter price and quantity for «%1$s»</string>
+    <string name="error_generic">Error</string>
+    <string name="error_input">Invalid input</string>
+    <string name="error_generic_product">the product</string>
+
+    <string name="settings_currency">Currency</string>
+    <string name="settings_mass_unit">Mass units</string>
+    <string name="settings_volume_unit">Volume units</string>
+    <string name="settings_save_prices">Save prices</string>
+    <string name="settings_storage_limit">Record storage limit (0 = unlimited)</string>
+    <string name="settings_reset_all">Reset all</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">Auto (system)</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="lang_ru">Russian</string>
+    <string name="lang_en">English</string>
+
+    <string name="catalog_title">Catalog</string>
+    <string name="catalog_action_open">Catalog</string>
+    <string name="catalog_choose_for_compare">Choose from catalog</string>
+    <string name="catalog_filter_type">Type</string>
+    <string name="catalog_filter_brand">Brand</string>
+    <string name="catalog_filter_spec">Specification</string>
+    <string name="catalog_filter_all">All</string>
+    <string name="catalog_selected">Selected: %1$d</string>
+    <string name="catalog_clear_selection">Clear selection</string>
+    <string name="catalog_empty">Catalog is empty. Save a product on the calculation screen.</string>
+    <string name="catalog_go_calculate">Go to calculation</string>
+    <string name="catalog_row_price">%1$s / %2$s %3$s</string>
+    <string name="catalog_edit">Edit</string>
+    <string name="catalog_delete">Delete</string>
+    <string name="catalog_compare">Compare (%1$d)</string>
+    <string name="catalog_dialog_edit">Edit product</string>
+    <string name="catalog_dialog_save">Save</string>
+    <string name="catalog_dialog_cancel">Cancel</string>
+    <string name="catalog_error_name">Enter a product name</string>
+    <string name="catalog_error_price">Enter a positive price and quantity</string>
+    <string name="catalog_error_duplicate">This variant already exists for this product</string>
+    <string name="catalog_error_save">Could not save the change</string>
+    <string name="catalog_delete_title">Delete this item?</string>
+    <string name="catalog_delete_message">Price history for &quot;%1$s&quot; will be deleted.</string>
+    <string name="catalog_select_hint">Select 2 to 4 products to compare</string>
+    <string name="catalog_no_price">no price recorded</string>
+</resources>

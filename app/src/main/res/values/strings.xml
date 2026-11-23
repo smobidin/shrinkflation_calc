@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Shrinkflation Calc</string>
+
+    <string name="nav_unitprice">Расчёт</string>
+    <string name="nav_shrinkflation">Шринкфляция</string>
+    <string name="nav_comparison">Сравнение</string>
+    <string name="nav_settings">Настройки</string>
+
+    <string name="title_unitprice">Расчёт на единицу</string>
+    <string name="title_shrinkflation">Шринкфляция</string>
+    <string name="title_comparison">Сравнение цен за единицу</string>
+    <string name="title_settings">Настройки</string>
+
+    <string name="field_product">Товар</string>
+    <string name="field_brand">Бренд</string>
+    <string name="field_spec">Специфика</string>
+    <string name="field_price">Цена</string>
+    <string name="field_qty">Кол-во</string>
+
+    <string name="action_save_to_db">Сохранить в базу</string>
+    <string name="label_type">Тип: %1$s</string>
+    <string name="label_old_package">Старая упаковка</string>
+    <string name="label_new_package">Новая упаковка</string>
+    <string name="action_calculate">Рассчитать</string>
+    <string name="action_reset">Сброс</string>
+    <string name="action_swap">Поменять местами</string>
+    <string name="action_add">Добавить</string>
+    <string name="action_remove">Удалить</string>
+    <string name="action_compare">Сравнить</string>
+
+    <string name="result_unit_price">Цена за 1 %1$s: %2$s</string>
+    <string name="result_unit_old">Цена за единицу старая: %1$s</string>
+    <string name="result_unit_new">Цена за единицу новая: %1$s</string>
+    <string name="result_change">Изменение: %1$s%%</string>
+    <string name="result_equiv">Эквивалентная цена: %1$s</string>
+    <string name="result_overpay">Переплата: %1$s</string>
+    <string name="result_target">Целевая цена: %1$s</string>
+    <string name="result_discount">Необходимая скидка: %1$s%%</string>
+    <string name="comparison_result_header">Результат сравнения</string>
+    <string name="comparison_result_hint">Цена за 1 %1$s — от самой выгодной к самой дорогой</string>
+    <string name="comparison_label_full">%1$s «%2$s», %3$s</string>
+    <string name="comparison_label_brand">%1$s «%2$s»</string>
+    <string name="comparison_label_spec">%1$s, %3$s</string>
+    <string name="comparison_price">%1$s %2$s/%3$s</string>
+    <string name="comparison_cheapest_line">★ %1$s — %2$s — самая выгодная</string>
+    <string name="comparison_more_line">%1$s — %2$s — дороже на %3$s%% (%4$s)</string>
+
+    <string name="unit_mass">Масса</string>
+    <string name="unit_volume">Объём</string>
+    <string name="unit_count">Штуки</string>
+    <string name="unit_g">г</string>
+    <string name="unit_kg">кг</string>
+    <string name="unit_ml">мл</string>
+    <string name="unit_l">л</string>
+    <string name="unit_pcs">шт</string>
+
+    <string name="error_need_price_qty">Укажите цену и количество для «%1$s»</string>
+    <string name="error_generic">Ошибка</string>
+    <string name="error_input">Ошибка ввода</string>
+    <string name="error_generic_product">товара</string>
+
+    <string name="settings_currency">Валюта</string>
+    <string name="settings_mass_unit">Единицы массы</string>
+    <string name="settings_volume_unit">Единицы объёма</string>
+    <string name="settings_save_prices">Сохранять цены</string>
+    <string name="settings_storage_limit">Лимит хранения записей (0 = без лимита)</string>
+    <string name="settings_reset_all">Сбросить всё</string>
+    <string name="settings_language">Язык</string>
+    <string name="settings_theme">Тема</string>
+    <string name="theme_system">Авто (системная)</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_en">English</string>
+
+    <string name="catalog_title">Каталог</string>
+    <string name="catalog_action_open">Каталог</string>
+    <string name="catalog_choose_for_compare">Выбрать из каталога</string>
+    <string name="catalog_filter_type">Тип</string>
+    <string name="catalog_filter_brand">Бренд</string>
+    <string name="catalog_filter_spec">Специфика</string>
+    <string name="catalog_filter_all">Все</string>
+    <string name="catalog_selected">Выбрано: %1$d</string>
+    <string name="catalog_clear_selection">Снять выбор</string>
+    <string name="catalog_empty">Каталог пуст. Сохраните товар на экране расчёта.</string>
+    <string name="catalog_go_calculate">К расчёту</string>
+    <string name="catalog_row_price">%1$s / %2$s %3$s</string>
+    <string name="catalog_edit">Редактировать</string>
+    <string name="catalog_delete">Удалить</string>
+    <string name="catalog_compare">Сравнить (%1$d)</string>
+    <string name="catalog_dialog_edit">Редактирование товара</string>
+    <string name="catalog_dialog_save">Сохранить</string>
+    <string name="catalog_dialog_cancel">Отмена</string>
+    <string name="catalog_error_name">Укажите название товара</string>
+    <string name="catalog_error_price">Укажите положительные цену и количество</string>
+    <string name="catalog_error_duplicate">Такой вариант уже есть у этого товара</string>
+    <string name="catalog_error_save">Не удалось сохранить изменение</string>
+    <string name="catalog_delete_title">Удалить позицию?</string>
+    <string name="catalog_delete_message">История цен для «%1$s» будет удалена.</string>
+    <string name="catalog_select_hint">Выберите от 2 до 4 товаров для сравнения</string>
+    <string name="catalog_no_price">цена не указана</string>
+</resources>

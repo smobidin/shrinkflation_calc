@@ -1,0 +1,43 @@
+# Gradle
+.gradle/
+/build
+/build/
+*/build/
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
+.externalNativeBuild/
+.cxx/
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+/local.properties
+/captures/
+/.navigation/
+/dependency-reduced-pom.xml
+
+# Local SDK / keys
+local.properties
+*.jks
+*.keystore
+keystore.properties
+google-services.json
+
+# Project docs not intended for the repository
+plans_req/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*~
+
+# Python / misc caches
+__pycache__/
+*.pyc
